@@ -42,5 +42,5 @@ Run the notebook or script
 Historical stock data for Apple Inc. (AAPL)
 
 
-**Author**
+**Author:**
 Abdulbasit Ojikutu
