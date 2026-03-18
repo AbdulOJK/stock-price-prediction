@@ -1,45 +1,44 @@
 # Stock Price Prediction
 
-Overview
+## **Overview**
 
 This project uses a Long Short-Term Memory (LSTM) neural network to predict future stock prices based on historical data.
 
-Tools & Technologies
 
-Python
+## **Tools & Technologies**
 
-Pandas, NumPy
+- Python
 
-Matplotlib
+- Pandas, NumPy
 
-TensorFlow / Keras
+- Matplotlib
 
-Key Features
+- TensorFlow / Keras
 
-Data collection using pandas_datareader
+## **Key Features**
 
-Data preprocessing and normalisation
+- Data collection using pandas_datareader
 
-LSTM model training and evaluation
+- Data preprocessing and normalisation
 
-Visualisation of predicted vs actual stock prices
+- LSTM model training and evaluation
 
-Results
+- Visualisation of predicted vs actual stock prices
+
+**Results**
 
 Achieved ~85% prediction accuracy
 
 Reduced RMSE by 18% after optimisation
 
-How to Run
+**How to Run**
 
 Install dependencies: pip install -r requirements.txt
 
 Run the notebook or script
 
 Dataset
-
 Historical stock data for Apple Inc. (AAPL)
 
 Author
-
 Abdulbasit Ojikutu
