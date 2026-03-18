@@ -31,14 +31,18 @@ Achieved ~85% prediction accuracy
 
 Reduced RMSE by 18% after optimisation
 
-**How to Run**
+### **How to Run**
 
 Install dependencies: pip install -r requirements.txt
 
 Run the notebook or script
 
+
+
 Dataset
 Historical stock data for Apple Inc. (AAPL)
+
+
 
 Author
 Abdulbasit Ojikutu
