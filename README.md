@@ -38,11 +38,9 @@ Install dependencies: pip install -r requirements.txt
 Run the notebook or script
 
 
-
-Dataset
+**Dataset** 
 Historical stock data for Apple Inc. (AAPL)
 
 
-
-Author
+**Author**
 Abdulbasit Ojikutu
