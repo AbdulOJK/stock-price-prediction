@@ -25,7 +25,7 @@ This project uses a Long Short-Term Memory (LSTM) neural network to predict futu
 
 - Visualisation of predicted vs actual stock prices
 
-**Results**
+## **Results**
 
 Achieved ~85% prediction accuracy
 
