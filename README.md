@@ -28,7 +28,11 @@ A machine learning project using a Long Short-Term Memory (LSTM) neural network 
 
 Achieved ~85% prediction accuracy
 
-Reduced RMSE by 18% after optimisation
+RMSE of 9.84
+<img width="1597" height="872" alt="image" src="https://github.com/user-attachments/assets/36430744-25c5-4365-a61f-033360d28f20" />
+
+<img width="1605" height="873" alt="image" src="https://github.com/user-attachments/assets/2a2d3541-111d-44fb-b7ff-705fc555b697" />
+
 
 ## **How to Run**
 
