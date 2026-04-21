@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 plt.style.use('fivethirtyeight')
 
-# ─── 1. DATA COLLECTION ───────────────────────────────────────────────────────
+# DATA COLLECTION 
 
 # Fetch historical stock data for Apple Inc. from Yahoo Finance
 df = yf.download('AAPL', start='2012-01-01', end='2024-03-16')
@@ -29,7 +29,7 @@ plt.xlabel('Date', fontsize=18)
 plt.ylabel('Close Price USD ($)', fontsize=18)
 plt.show()
 
-# ─── 2. DATA PREPROCESSING ────────────────────────────────────────────────────
+# DATA PREPROCESSING
 
 # Filter to closing price only and convert to numpy array
 data = df
@@ -42,7 +42,7 @@ training_data_len = math.ceil(len(dataset) * 0.8)
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(dataset)
 
-# ─── 3. TRAINING DATA PREPARATION ────────────────────────────────────────────
+# TRAINING DATA PREPARATION
 
 train_data = scaled_data[0:training_data_len, :]
 
@@ -58,7 +58,7 @@ for i in range(60, len(train_data)):
 x_train, y_train = np.array(x_train), np.array(y_train)
 x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 
-# ─── 4. MODEL ARCHITECTURE ────────────────────────────────────────────────────
+# MODEL ARCHITECTURE
 
 model = Sequential()
 model.add(LSTM(units=50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
@@ -72,7 +72,7 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 # Train the model (epochs=1 for demonstration; increase for better accuracy)
 model.fit(x_train, y_train, batch_size=1, epochs=1)
 
-# ─── 5. TESTING & EVALUATION ──────────────────────────────────────────────────
+# TESTING & EVALUATION
 
 # Prepare test data (include 60-day lookback window)
 test_data = scaled_data[training_data_len - 60:, :]
@@ -95,7 +95,7 @@ predictions = scaler.inverse_transform(predictions)
 rmse = np.sqrt(((predictions - y_test) ** 2).mean())
 print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
 
-# ─── 6. VISUALISATION ─────────────────────────────────────────────────────────
+# VISUALISATION
 
 train = data[:training_data_len]
 valid = data[training_data_len:].copy()
@@ -110,7 +110,7 @@ plt.plot(valid[['Close', 'Predictions']])
 plt.legend(['Train', 'Actual', 'Predictions'], loc='lower right')
 plt.show()
 
-# ─── 7. SINGLE DAY PREDICTION ─────────────────────────────────────────────────
+# SINGLE DAY PREDICTION 
 
 # Predict the closing price using the most recent 60 days
 apple_quote = yf.download('AAPL', start='2012-01-01', end='2024-03-16')
