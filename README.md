@@ -34,7 +34,7 @@ Reduced RMSE by 18% after optimisation
 
 Clone the repository:
 
-bashgit clone https://github.com/yourusername/stock-price-prediction.git
+bashgit clone https://github.com/AbdulOJK/stock-price-prediction.git
 
 Install dependencies:
 
