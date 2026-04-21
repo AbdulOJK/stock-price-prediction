@@ -30,7 +30,7 @@ Achieved ~85% prediction accuracy
 
 Reduced RMSE by 18% after optimisation
 
-### **How to Run**
+## **How to Run**
 
 Clone the repository:
 
