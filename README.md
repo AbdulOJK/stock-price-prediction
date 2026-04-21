@@ -2,8 +2,7 @@
 
 ## **Overview**
 
-This project uses a Long Short-Term Memory (LSTM) neural network to predict future stock prices based on historical data.
-
+A machine learning project using a Long Short-Term Memory (LSTM) neural network to forecast Apple Inc. (AAPL) stock prices based on historical market data.
 
 ## **Tools & Technologies**
 
@@ -33,14 +32,20 @@ Reduced RMSE by 18% after optimisation
 
 ### **How to Run**
 
-Install dependencies: pip install -r requirements.txt
+Clone the repository:
 
-Run the notebook or script
+bashgit clone https://github.com/yourusername/stock-price-prediction.git
 
+Install dependencies:
+
+bashpip install -r requirements.txt
+
+Open and run the notebook:
+
+bashjupyter notebook stock_prediction.ipynb
 
 ## **Dataset** 
-Historical stock data for Apple Inc. (AAPL)
-
+Historical daily stock price data for Apple Inc. (AAPL), sourced via pandas_datareader from Yahoo Finance.
 
 **Author:**
 Abdulbasit Ojikutu
