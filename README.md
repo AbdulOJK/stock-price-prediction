@@ -34,15 +34,15 @@ Reduced RMSE by 18% after optimisation
 
 Clone the repository:
 
-bashgit clone https://github.com/AbdulOJK/stock-price-prediction.git
+git clone https://github.com/AbdulOJK/stock-price-prediction.git
 
 Install dependencies:
 
-bashpip install -r requirements.txt
+pip install -r requirements.txt
 
 Open and run the notebook:
 
-bashjupyter notebook stock_prediction.ipynb
+jupyter notebook stock_prediction.ipynb
 
 ## **Dataset** 
 Historical daily stock price data for Apple Inc. (AAPL), sourced via pandas_datareader from Yahoo Finance.
